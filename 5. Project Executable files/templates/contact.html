@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Quality Prediction</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+BE+VLG:wght@100..400&family=Playwrite+PE:wght@100..400&family=Prata&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+BE+VLG:wght@100..400&display=swap');
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensures the body takes up the full viewport height */
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+            url('https://static.vecteezy.com/system/resources/thumbnails/000/153/588/small/vector-roadmap-location-map.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 22px 75px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-family: "Dancing Script", cursive;
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px; 
+            display:flex;
+        }
+        header ul {
+            display: flex;
+            justify-content: right;
+            align-items: right;
+        }
+        header ul li {
+            list-style: none;
+        }
+        header ul li a {
+            text-decoration: none;
+            padding: 6px 15px;
+            color: #fff;
+            border-radius: 20px;
+        }
+        header ul li a:hover {
+            background: #ffe6e6;
+            color: #2b1055;
+        }
+        section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 600px; 
+        }
+        form {
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-align:center;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .alert {
+            display: none;
+            background-color: #ffc107;
+            color: #333;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo"><i>Quality<br>&nbsp;Orchard</i></a>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <form method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="message">Message (Optional)</label>
+            <textarea id="message" name="message"></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="submittedMessage" class="alert">
+            Successfully added to contact!
+        </div>
+    </section>  
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            document.getElementById("submittedMessage").style.display = "block"; 
+        });
+    </script>  
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Quality Prediction</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+BE+VLG:wght@100..400&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the top */
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+            url('https://www.allrecipes.com/thmb/7puguWxu7N28mqvD6pQ6EcJ76xc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-144476015-3dcb5c523152449caf604e8bc551f5a8.jpg');
+            background-size: 1300px 800px;
+            background-repeat: no-repeat;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 22px 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-family: "Dancing Script", cursive;
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px; 
+        }
+        header ul {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+        header ul li {
+            list-style: none;
+        }
+        header ul li a {
+            text-decoration: none;
+            padding: 6px 15px;
+            color: #fff;
+            border-radius: 20px;
+        }
+        header ul li a:hover {
+            background: #ffe6e6;
+            color: #2b1055;
+        }
+        main {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 100%;
+            margin-top: 50px; /* Add space on top */
+            margin-bottom: 50px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #ff6666;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #d64161;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo"><i>Quality<br>&nbsp;Orchard</i></a>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <h2>Apple Quality Prediction</h2><br>
+        <form action="/result" method="post">
+            <label for="Size">Size:</label>
+            <input type="text" id="Size" name="Size">
+            
+            <label for="Weight">Weight:</label>
+            <input type="text" id="Weight" name="Weight">
+            
+            <label for="Sweetness">Sweetness:</label>
+            <input type="text" id="Sweetness" name="Sweetness">
+            
+            <label for="Crunchiness">Crunchiness:</label>
+            <input type="text" id="Crunchiness" name="Crunchiness">
+            
+            <label for="Juiciness">Juiciness:</label>
+            <input type="text" id="Juiciness" name="Juiciness">
+            
+            <label for="Ripeness">Ripeness:</label>
+            <input type="text" id="Ripeness" name="Ripeness">
+            
+            <label for="Acidity">Acidity:</label>
+            <input type="text" id="Acidity" name="Acidity">
+            
+            <button type="submit">Predict</button>
+        </form>
+    </main>
+</body>
+</html>

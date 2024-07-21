@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Quality Prediction</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+BE+VLG:wght@100..400&family=Playwrite+PE:wght@100..400&family=Prata&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+BE+VLG:wght@100..400&display=swap');
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 10px 20px;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+            url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ6A6-cM7ktivjtoEBYbwyqKm9YiBY20LOhE3ryyylQLyiQwYNo21sfedRBQw6v1o_anQ&usqp=CAU');
+            background-size: 1300px 800px; 
+            background-repeat: no-repeat;
+            display: flex
+        }
+        header{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 80px;
+            justify-content: space-between;
+            align-items: right;
+        }
+        header .logo
+        {
+            font-family: "Dancing Script", cursive;
+            color: #b3ffff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px; 
+            display:flex;
+        }
+        header uL
+        {
+            display: flex;
+            justify-content: right;
+            align-items: right;
+        }
+        header ul li
+        {
+            list-style: none;
+        }
+        header ul li a
+        {
+            text-decoration: none;
+            padding: 6px 15px;
+            color: #fff;
+            border-radius: 20px;
+        }
+        header ul li a:hover
+        {
+            background: #ffe6e6;
+            color: #2b1055;
+        }
+        article
+        {
+            font-family: "Prata", serif;
+            font-weight: 1400;
+            color: #ccffcc;
+            padding:10px;
+            margin: 150px;
+            text-align: left;
+        }
+        article h1
+        {
+            font-size: 1em;
+            letter-spacing: 1px;
+        }
+        article p
+        {
+            letter-spacing: 0.5px;
+        }
+        .button-container {
+            text-align: left;
+            margin-top: 20px; 
+        }
+        .button-container a
+        {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color:  #333399;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        .button-container a:hover
+        {
+            background-color: #6666cc;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <header>
+        <a href="/" class="logo"><i>Quality<br>&nbsp;Orchard</i></a>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </header>
+    <article>
+        <h1><font size="6">Welcome to Golden Harvesting:<br>A Predictive Model For Apple Quality Assurance</font>
+        </h1>
+        <br>
+        <p>At Golden Harvesting, we harness the power of machine learning to ensure the highest quality apples for your table. 
+            Our advanced predictive model evaluates key factors such as size, color, firmness, and sugar content to provide accurate 
+            quality assessments. We empower farmers and distributors to make informed 
+            decisions about harvesting and storage, optimizing every step from orchard to market.<br>
+            By assess apple quality before harvesting to determine the best time for picking.
+        </p>
+        <br>
+        <div class="button-container">
+            <a href="/index">Let's check your apple quality status</a>
+        </div>
+    </article>
+</section> 
+</body>
+</html>

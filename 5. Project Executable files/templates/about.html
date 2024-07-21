@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Quality Prediction</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+BE+VLG:wght@100..400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playwrite+BE+VLG:wght@100..400&display=swap');
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 10px 20px;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+            url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk3w78Ufvdaq_9GNFNrktg152vLEfxSc8Ufg&usqp=CAU');
+            background-size: 1300px 800px; /* Set the background size */
+            background-repeat: no-repeat;
+            display: flex;
+        }
+        header{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 22px 75px;
+            justify-content: space-between;
+            align-items: right;
+        }
+        header .logo
+        {
+            font-family: "Dancing Script", cursive;
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px; 
+            display:flex;
+        }
+        header uL
+        {
+            display: flex;
+            justify-content: right;
+            align-items: right;
+        }
+        header ul li
+        {
+            list-style: none;
+        }
+        header ul li a
+        {
+            text-decoration: none;
+            padding: 6px 15px;
+            color: #fff;
+            border-radius: 20px;
+        }
+        header ul li a:hover
+        {
+            background: #ffe6e6;
+            color: #2b1055;
+        }
+        article
+        {
+            font-family: "EB Garamond", serif;
+            padding: 50px;
+            margin: 50px;
+            text-align: left;
+            
+        }
+        article dd
+        {
+            font-weight: 50;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        article h3
+        {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo"><i>Quality<br>&nbsp;Orchard</i></a>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </header>    
+    <article>
+        <h3>1. Data Collection & Preparation</h3>
+            <dd>The first step involves collecting the dataset, which includes gathering data on various apple 
+                quality metrics such as size, color, and firmness from different sources. Once the data is collected,
+                 it undergoes preparation by addressing missing values, selecting relevant features, encoding 
+                 categorical variables, and normalizing or standardizing the data.</dd>
+        <br>
+        <h3>2. Exploratory Data Analysis</h3>
+            <dd>During Exploratory Data Analysis (EDA), descriptive statistics are computed to understand the distribution 
+                of the data. This includes calculating mean, median, and standard deviation for different features. Visual 
+                analysis is then performed using plots such as histograms and scatter plots to examine distributions and 
+                relationships between features.</dd>
+        <br>
+        <h3>3. Model Building</h3>
+        <dd>Model building involves training the model using multiple algorithms to predict apple quality. Various 
+            algorithms, such as Logistic Regression, Decision Trees, and Random Forests, are applied to the data. 
+            After training, the model is tested to evaluate its performance based on metrics like accuracy, precision,
+            and recall.</dd>
+        <br>
+        <h3>4. Performance Testing & Hyperparameter Tuning</h3>
+        <dd>The performance of the model is assessed using multiple evaluation metrics to ensure it effectively predicts apple quality. 
+            Hyperparameter tuning is conducted to optimize the model's parameters, and the accuracy of the model is compared before and 
+            after tuning to measure improvements.</dd>
+        <br>
+        <h3>5. Model Deployment</h3>
+        <dd>In the deployment phase, the best-performing model is saved for future use. It is then integrated into a web framework, such 
+            as Flask or Django, allowing users to input apple features and receive quality predictions in real-time through a user-friendly 
+            interface.</dd>
+    </article>
+</body>
+</html>
