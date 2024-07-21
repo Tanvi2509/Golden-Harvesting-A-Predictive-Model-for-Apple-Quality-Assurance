@@ -1,0 +1,2 @@
+# Golden-Harvesting-A-Predictive-Model-for-Apple-Quality-Assurance
+This project aims to develop a machine learning model to predict the quality of apples based on various factors such as size, color, firmness, and sugar content. By analyzing historical data on apple quality and environmental conditions during growth, the model will help farmers and distributors make informed decisions about harvesting and storage.
